@@ -1,0 +1,170 @@
+.header{
+  margin-left: 1.06vw;
+  margin-top: 1.1vw;
+}
+
+.header__navigation {
+  width: 9.846vw;
+  cursor: pointer;
+}
+
+
+.header__navigation:hover{
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
+}
+
+.eyes{
+  width: 52.137vw;
+  position: absolute;
+  left: 3.556vw;
+  top: 16.376vw;
+}
+
+.bg{
+  position: absolute;
+  color:#2F2F2F;
+  font-size: 9.641vw;
+  letter-spacing: 1vw;
+  text-transform: uppercase;
+  font-weight: 600;
+  right: 10vw;
+  top: -2.5vw;
+  z-index: 1;
+  line-height: 1;
+  cursor: pointer;
+}
+
+
+.form {
+  width: 41.026vw;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: absolute;
+  right: 2.043vw;
+  bottom: 4.5vw;
+  z-index: 23;
+  align-items: center;
+}
+
+.form input{
+  width: 100%;
+  background: transparent;
+  border-radius: 0.991vw;
+  height: 3.487vw;
+  border: 0.1vw solid white;
+  padding: 0px;
+  color: white;
+  padding-left:1.607vw;
+  font-family: 'TT Firs Neue Trl', sans-serif;
+  font-size: 1.162vw;
+  box-sizing: border-box;
+}
+
+.form label{
+  margin-top: 0.923vw;
+  margin-bottom: .3vw;
+  font-size: 1.478vw;
+  align-self: flex-start;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.form input::placeholder{
+  font-size: 1.162vw;
+  padding: 0;
+  margin: 0;
+  padding-left: 1vw;
+ 
+}
+
+.form .button{
+  border: none;
+  color: white;
+  padding: 0.6vw 3.111vw;
+  background: #FC5812;
+  width: 100%;
+  border-radius: 0.718vw;
+  font-size: 1.06vw;
+}
+
+.form textarea{
+  font-size: 1.162vw;
+  padding-left:1.607vw;
+
+  height: 10vw;
+  resize: none;
+  align-self: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+  border-radius: 0.991vw;
+  border: 0.1vw solid white;
+  color: white;
+}
+
+.form__group{
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  gap: 1vw;
+}
+.form input[type="checkbox"]{
+  width: 1.846vw;
+  height: 1.846vw;
+  padding: 0px;
+  margin: 0;
+}
+.form p{
+  font-size: 1.179vw;
+}
+
+.contacts{
+  background: rgba(252, 88, 18, 0.47);
+  font-size: 1.478vw;
+  color: white;
+  width: fit-content;
+  padding: 1.2vw 1.5vw; 
+  border-radius: 0.991vw;
+  position: absolute;
+  top: 10vw;
+  right: 45vw;
+  z-index: 20;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.bg:hover~.contacts{
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.contacts:hover{
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+
+}
+
+.contacts p{
+  margin: 0;
+}
+
+.message{
+  position: absolute;
+  right: 20vw;
+  bottom: 20vw;
+  color: white;
+  font-size: 2vw;
+  z-index: 22;
+  padding: 1vw;
+  border-radius: 1vw;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+
+.hidden{
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}

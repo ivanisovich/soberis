@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Корзина | Фестиваль соберись</title>
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/tt-firs-neue-trl"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="../images/index/about.png" />
+    <link rel="stylesheet" href="../styles/cart.css">
+    <script src="../script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="./shop.html">
+        <img class="header__navigation" src="../images/cart/cart-nav.svg" alt="">
+      </a>
+    </header>
+
+    <div class="product">
+      <img class="product__image" src="../images/shop/prod-1.png" alt="">
+    </div>
+
+    <div class="bg">
+      Leave cash <br>
+      and mono- <br>
+      chrome  <br>
+      behind
+    </div>
+
+    <form class="form" action="preventDefault();">
+      <label  for="name">name</label>
+      <input required type="text" id="name">
+      <label for="phone">phone</label>
+      <input required type="tel" id="phone">
+      <label for="email">email</label>
+      <input required placeholder="example@email.com" type="email" id="email">
+      <button class="button">order</button>
+    </form>
+
+    <div class="message hidden">Спасибо за покупку!</div>
+
+    <div id="footer-container"></div>
+  
+    <script>
+      function sendForm(){
+        document.querySelector(".form").classList.add("hidden")
+        document.querySelector(".message").classList.remove("hidden")
+      }
+
+      document.querySelector("form").addEventListener("submit",(e)=>{
+        e.preventDefault()
+          sendForm()
+      })
+    </script>
+  </body>
+</html>

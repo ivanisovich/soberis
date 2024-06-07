@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4/turn.min.css"
+    />
+    <title>О фестивале | Фестиваль соберись</title>
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/festival.css" />
+
+    <link
+      href="https://fonts.cdnfonts.com/css/tt-firs-neue-trl"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="../images/index/about.png" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="../templates/about.html">
+        <img
+          class="header__navigation"
+          src="../images/festival/fetst-nav.svg"
+          alt=""
+        />
+      </a>
+    </header>
+    <img src="../images/festival/bg.png" alt="" class="bg" />
+    <div class="text">
+      <h1>о фестивале</h1>
+      <p>
+        «Соберись» – единственный мультиформатный фестиваль смены личности в России, ежегодно собирающий тысячи креативных и готовых к изменениям гостей. Это место, где вы сможете полностью изменится внешне: собрать себе новый облик. «Соберись» считает одной из своих миссий делиться с гостями фестиваля радостью праздника и возможностью менять себя и окружающий мир, дает отдохнуть от рутины и скучной обыденности
+      </p>
+    </div>
+
+    <section class="stats">
+      <img class="div1" src="../images/festival/card1.svg" alt="">
+      <img class="div2" src="../images/festival/card2.svg" alt="">
+      <img class="div3" src="../images/festival/card6.svg" alt="">
+      <img class="div4" src="../images/festival/card3.svg" alt="">
+      <img class="div5" src="../images/festival/card4.svg" alt="">
+      <img class="div6" src="../images/festival/card5.svg" alt="">
+      <img class="div7" src="../images/festival/card7.svg" alt="">
+
+    </section>
+
+    <section class="photo-cards">
+      <div class="photo-card">
+        <img class="photo-card__image" src="../images/festival/card1.png" alt="">
+        
+        <img class="photo-card__text hidden" src="../images/festival/card1-text.svg" alt="">
+      </div>
+      <div class="photo-card">
+        <img class="photo-card__image" src="../images/festival/card2.png" alt="">
+        <img class="photo-card__text hidden" src="../images/festival/card2-text.svg" alt="">
+
+      </div>
+      <div class="photo-card">
+        <img  class="photo-card__image" src="../images/festival/card3.png" alt="">
+        <img class="photo-card__text hidden" src="../images/festival/card3-text.svg" alt="">
+
+      </div>
+
+      <div class="photo-card">
+        <img class="photo-card__image" src="../images/festival/card4.png" alt="">
+        <img class="photo-card__text hidden" src="../images/festival/card4-text.svg" alt="">
+
+      </div>
+      <div class="photo-card">
+        <img  class="photo-card__image" src="../images/festival/card5.png" alt="">
+        <img class="photo-card__text hidden" src="../images/festival/card5-text.svg" alt="">
+
+      </div>
+      <div class="photo-card">
+        <img class="photo-card__image"  src="../images/festival/card6.png" alt="">
+        <img class="photo-card__text hidden" src="../images/festival/card6-text.svg" alt="">
+
+      </div>
+      <div class="bg1">
+        change <br> your <br> self
+      </div>
+      <div class="bg2">
+        then <br>change <br>
+ the world
+      </div>
+    </section>
+
+    <ul class=features>
+      <li>
+        <img src="../images/festival/Full Battery.svg" alt="">
+        <span>Питьевая вода, горячий душ, зарядки для гаджетов</span>
+      </li>
+      <li>
+        <img src="../images/festival/Home.svg" alt="">
+        <span>Можно остановиться в кемпинге, домике или приехать со своей палаткой</span>
+      </li>
+      <li>
+        <img src="../images/festival/Food Bar.svg" alt="">
+        <span>Фудкорт с едой и напитками на любой вкус</span>
+      </li>
+      <li>
+        <img src="../images/festival/Music Album.svg" alt="">
+        <span>Мастер классы, музыкальная программа, выступления, арт-объекты, ярмарка </span>
+      </li>
+    </ul>
+    
+    <script src="../script.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <div id="footer-container"></div>
+
+    <script>
+      document.addEventListener("click",(e)=>{
+        if(e.target.closest(".photo-card")){
+          console.log(   )
+          e.target.closest(".photo-card").children[0].classList.toggle("hidden")
+          e.target.closest(".photo-card").children[1].classList.toggle("hidden")
+        }
+      })
+    </script>
+  </body>
+</html>

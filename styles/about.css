@@ -1,0 +1,38 @@
+.section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+
+  padding-bottom: 5vw;
+  padding-top: 5vw;
+
+}
+body{
+  padding-bottom: 5vh;
+}
+.section__image{
+  width: 37%;
+}
+
+
+.header__navigation{
+  width: 7vw;
+}
+.section__text{
+  width: 50%;
+}
+#section3 .section__image{
+  width: 60%;
+  margin-right: -10%;
+}
+#section2 .section__image{
+  width: 45%;
+}
+#section3{
+  gap: 0vw;
+  align-items: flex-start;
+}
+#section2{
+  gap: 0vw;
+}

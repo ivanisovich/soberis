@@ -1,0 +1,32 @@
+body{
+  font-family: 'TT Firs Neue Trl', sans-serif;
+  padding: 0;
+  margin: 0;
+  background: black;
+  overflow-x: hidden;
+}
+button{
+  font-family: 'TT Firs Neue Trl', sans-serif;
+cursor: pointer;
+}
+
+button:hover{
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
+}
+
+.header{
+  margin-left: 1.06vw;
+  margin-top: 1.1vw;
+}
+
+.header__navigation {
+  width: 9.846vw;
+  cursor: pointer;
+}
+
+
+.header__navigation:hover{
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
+}

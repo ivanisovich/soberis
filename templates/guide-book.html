@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4/turn.min.css"
+    />
+    <title>Путеводитель | Фестиваль соберись</title>
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/guide-book.css" />
+
+    <link
+      href="https://fonts.cdnfonts.com/css/tt-firs-neue-trl"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="../images/index/about.png" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="../templates/about.html">
+        <img
+          class="header__navigation"
+          src="../images/guidebook/guide-nav.svg"
+          alt=""
+        />
+      </a>
+    </header>
+
+    <img src="../images/guidebook/bg.jpg" alt="" class="bg" />
+
+    <div class="text">
+      <h1>путеводитель</h1>
+      <p>
+        Путеводитель описывает все зоны фестиваля, аттракционы и объекты Каждая
+        часть книги посвящена отельному району фестиваля: ярмарка, аттракционы,
+        кафетерий и зона релакса. Также книга содержит в себе купоны на
+        бесплатный мерч и промокоды на скидку в магазине. Путеводитель детально
+        знакомит с функционалом объектов фестиваля и указывает расположение
+        аттракционов на карте фестиваля
+      </p>
+    </div>
+
+    <div class="guidebook">
+
+      
+      <img src="../images/guidebook/1.png" alt="">
+      <img src="../images/guidebook/19.png" alt="">
+
+      <img src="../images/guidebook/16.png" alt="">
+      <img src="../images/guidebook/14.png" alt="">
+      <img src="../images/guidebook/13.png" alt="">
+
+
+      <img src="../images/guidebook/2.png" alt="">
+      <img src="../images/guidebook/3.png" alt="">
+      <img src="../images/guidebook/4.png" alt="">
+
+      <img src="../images/guidebook/6.png" alt="">
+      <img src="../images/guidebook/7.png" alt="">
+      <img src="../images/guidebook/8.png" alt="">
+
+      <img src="../images/guidebook/9.png" alt="">
+      <img src="../images/guidebook/10.png" alt="">
+      <img src="../images/guidebook/12.png" alt="">
+
+      <img src="../images/guidebook/15.png" alt="">
+    
+
+      <img src="../images/guidebook/17.png" alt="">
+      <img src="../images/guidebook/18.png" alt="">
+
+      <img src="../images/guidebook/20.png" alt="">
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <div id="footer-black-container"></div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+  const pages = document.querySelectorAll(".guidebook img");
+  let currentPage = 0;
+
+  function updatePages() {
+    pages.forEach((page, index) => {
+      if (index === currentPage) {
+   
+        page.style.zIndex = 2;
+      } else if (index < currentPage) {
+ 
+        page.style.zIndex = 1;
+      } else {
+      
+
+        page.style.zIndex = 1;
+      }
+    });
+  }
+
+  document.querySelector(".guidebook").addEventListener("click", () => {
+    if (currentPage < pages.length - 1) {
+      currentPage++;
+    } else {
+      currentPage = 0; // Возвращаемся к первой странице, если достигли конца
+    }
+    updatePages();
+  });
+
+  // Initial update
+  updatePages();
+});
+
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/templates/footer-black.html")
+          .then((response) => response.text())
+          .then((templateHtml) => {
+            document.body.insertAdjacentHTML("beforeend", templateHtml);
+
+            var source = document.getElementById(
+              "footer-black-template"
+            ).innerHTML;
+
+            var template = Handlebars.compile(source);
+
+            var context = {};
+
+            var html = template(context);
+            document.getElementById("footer-black-container").innerHTML = html;
+          });
+      });
+    </script>
+  </body>
+</html>

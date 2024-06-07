@@ -1,0 +1,67 @@
+body{
+  background: white;
+  padding-bottom: 50vw;
+}
+
+.header__navigation{
+  width: 16vw;
+}
+
+.bg{
+width: 90%;
+display: flex;
+margin: 0 auto;
+margin-top: 4vw
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 5vw;
+  border-bottom: 0.137vw solid black;
+  width: 69vw;
+  margin: 0 auto;
+  margin-top: -7vw;
+}
+
+.text h1{
+font-size: 4.786vw;
+font-weight: 300;
+text-transform: uppercase;
+margin-bottom: 1vw;
+}
+
+.text p{
+  font-size: 1.47vw;
+  max-width: 64.957vw;
+  text-align: center;
+  margin-top: 0vw;
+  padding-top: 0px;
+}
+
+.guidebook img{
+  position: absolute;
+  width: 70vw;
+  left: 50%;
+  transform: translate(-50%,0%);
+  
+}
+.guidebook{
+  width: 40vw;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  display: flex;
+  justify-content: center;
+}
+.guidebook :nth-child(7),
+.guidebook :nth-child(2),
+.guidebook :nth-child(4),
+.guidebook :nth-child(3),
+.guidebook :nth-child(5),
+.guidebook :nth-child(6),
+.guidebook :nth-child(10),
+.guidebook :nth-child(11){
+  margin-top: 3vw;
+}

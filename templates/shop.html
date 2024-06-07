@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Магазин | Фестиваль соберись</title>
+    <link rel="stylesheet" href="../styles/shop.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/tt-firs-neue-trl"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="../images/index/about.png" />
+    <link rel="stylesheet" href="../styles/global.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="../index.html">
+        <img
+          class="header__navigation"
+          src="../images/shop/shop-navigation.svg"
+          alt=""
+        />
+      </a>
+      <div class="price">
+        <a href="./cart.html">
+          <img class="price-bg" src="../images/shop/price-bg.png" alt="" />
+          <span class="price__text">
+            <span class="price-value">1590</span>
+            р
+          </span>
+        </a>
+      </div>
+    </header>
+    <div class="products">
+      <img
+        data-price="1990"
+        id="prod-1"
+        src="../images/shop/prod-1.png"
+        alt=""
+      />
+      <img
+        data-price="399"
+        id="prod-2"
+        src="../images/shop/prod-2.png"
+        alt=""
+      />
+      <img
+        data-price="990"
+        id="prod-3"
+        src="../images/shop/prod-3.png"
+        alt=""
+      />
+      <img
+        class="visible"
+        data-price="1390"
+        id="prod-4"
+        src="../images/shop/prod-4.png"
+        alt=""
+      />
+      <img
+        data-price="190"
+        id="prod-5"
+        src="../images/shop/prod-5.png"
+        alt=""
+      />
+      <img
+        data-price="1790"
+        id="prod-6"
+        src="../images/shop/prod-6.png"
+        alt=""
+      />
+      <img
+        data-price="2290"
+        id="prod-7"
+        src="../images/shop/prod-7.png"
+        alt=""
+      />
+      <img
+        data-price="1490"
+        id="prod-8"
+        src="../images/shop/prod-8.png"
+        alt=""
+      />
+      <img
+        data-price="2190"
+        id="prod-9"
+        src="../images/shop/prod-9.png"
+        alt=""
+      />
+      <img
+        data-price="490"
+        id="prod-10"
+        src="../images/shop/prod-10.png"
+        alt=""
+      />
+    </div>
+    <div class="items">
+      <img src="../images/shop/shop-items.svg" alt="" />
+      <div id="1" class="item-btn item-1"></div>
+      <div id="2" class="item-btn item-2"></div>
+      <div id="3" class="item-btn item-3"></div>
+      <div id="4" class="item-btn item-4"></div>
+      <div id="5" class="item-btn item-5"></div>
+      <div id="6" class="item-btn item-6"></div>
+      <div id="7" class="item-btn item-7"></div>
+      <div id="8" class="item-btn item-8"></div>
+      <div id="9" class="item-btn item-9"></div>
+      <div id="10" class="item-btn item-10"></div>
+    </div>
+    <div id="footer-black-container"></div>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/templates/footer-black.html")
+          .then((response) => response.text())
+          .then((templateHtml) => {
+            document.body.insertAdjacentHTML("beforeend", templateHtml);
+
+            var source = document.getElementById(
+              "footer-black-template"
+            ).innerHTML;
+
+            var template = Handlebars.compile(source);
+
+            var context = {};
+
+            var html = template(context);
+            document.getElementById("footer-black-container").innerHTML = html;
+          });
+      });
+
+      var currentProd = 4;
+
+      document.addEventListener("click", (e) => {
+        if (e.target.classList.contains("item-btn")) {
+          currentProd = e.target.id;
+          document
+            .querySelector(".products")
+            .querySelectorAll("img")
+            .forEach((item) => {
+              item.classList.remove("visible");
+            });
+          document
+            .querySelector("#prod-" + e.target.id)
+            .classList.add("visible");
+          document.querySelector(".price-value").innerHTML = document
+            .querySelector("#prod-" + e.target.id)
+            .getAttribute("data-price");
+          document.querySelectorAll(".item-btn").forEach((item) => {
+            item.classList.remove("active");
+          });
+          document.querySelector(".item-" + e.target.id).classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>
