@@ -25,29 +25,93 @@
         />
       </a>
     </header>
-
-    <div class="posters">
+    <div id="posters1" class="posters visible">
+      <img class="poster" src="../images/poster/poster1-1.png" alt="" />
+      <img class="active poster" src="../images/poster/poster1-2.png" alt="" />
+      <img class="poster" src="../images/poster/poster1-3.png" alt="" />
+    </div>
+    <div id="posters2" class="posters">
       <img class="poster" src="../images/poster/poster-1.png" alt="" />
-      <img class="active poster" src="../images/poster/poster-2.png" alt="" />
+      <img class=" poster" src="../images/poster/poster-2.png" alt="" />
       <img class="poster" src="../images/poster/poster-3.png" alt="" />
     </div>
 
+    <div id="posters3" class="posters">
+      <img class="poster" src="../images/poster/poster3-1.png" alt="" />
+      <img class=" poster" src="../images/poster/poster3-2.png" alt="" />
+      <img class="poster" src="../images/poster/poster3-3.png" alt="" />
+    </div>
+
+    <div id="posters4" class="posters">
+      <img class="poster" src="../images/poster/poster4-1.png" alt="" />
+      <img class=" poster" src="../images/poster/poster4-2.png" alt="" />
+      <img class="poster" src="../images/poster/poster4-3.jpg" alt="" />
+    </div>
+
+    <div id="posters5" class="posters">
+      <img class="poster" src="../images/poster/poster5-1.png" alt="" />
+      <img class=" poster" src="../images/poster/poster5-2.png" alt="" />
+      <img class="poster" src="../images/poster/poster5-3.png" alt="" />
+    </div>
+
+
+    <div id="posters6" class="posters">
+      <img class="poster" src="../images/poster/poster6-1.png" alt="" />
+      <img class=" poster" src="../images/poster/poster6-2.png" alt="" />
+      <img class="poster" src="../images/poster/poster6-3.png" alt="" />
+    </div>
+    <div id="posters7" class="posters">
+      <img class="poster" src="../images/poster/poster7-1.png" alt="" />
+      <img class=" poster" src="../images/poster/poster7-2.png" alt="" />
+      <img class="poster" src="../images/poster/poster7-3.png" alt="" />
+    </div>
+    <div id="posters8" class="posters">
+      <img class="poster" src="../images/poster/poster8-1.png" alt="" />
+      <img class=" poster" src="../images/poster/poster8-2.png" alt="" />
+      <img class="poster" src="../images/poster/poster8-3.png" alt="" />
+    </div>
+    <div id="posters9" class="posters">
+      <img class="poster" src="../images/poster/poster9-1.png" alt="" />
+      <img class=" poster" src="../images/poster/poster9-2.png" alt="" />
+      <img class="poster" src="../images/poster/poster9-3.png" alt="" />
+    </div>
+
+    
+
     <div class="poster__list">
       <img src="../images/poster/poster-list.svg" alt="" />
-      <div class="poster-btn"></div>
-      <div class="poster-btn"></div>
-      <div class="poster-btn"></div>
-      <div class="poster-btn"></div>
-      <div class="poster-btn"></div>
-      <div class="poster-btn"></div>
-      <div class="poster-btn"></div>
-      <div class="poster-btn"></div>
-      <div class="poster-btn"></div>
+      <div id="1" class="poster-btn"></div>
+      <div id="2" class="poster-btn"></div>
+      <div id="3" class="poster-btn"></div>
+      <div id="4" class="poster-btn"></div>
+      <div id="5" class="poster-btn"></div>
+      <div id="6" class="poster-btn"></div>
+      <div id="7" class="poster-btn"></div>
+      <div id="8" class="poster-btn"></div>
+      <div id="9" class="poster-btn"></div>
     </div>
 
     <div id="footer-container"></div>
     <script>
+      
+
       document.addEventListener("click", (e) => {
+
+        if(e.target.classList.contains("poster-btn")){
+          document.querySelectorAll(".poster-btn").forEach(item=>{
+            item.classList.remove("active")
+          })
+          e.target.classList.add("active")
+          document.querySelectorAll(".posters").forEach(item=>{
+            item.classList.remove("visible")
+          })
+          document.querySelector("#posters"+e.target.id).classList.add("visible")
+          document.querySelectorAll(".poster").forEach(item=>{
+            item.classList.remove("active")
+          })
+          document.querySelector("#posters"+e.target.id).children[1].classList.add("active")
+        }
+
         if (
           e.target.classList.contains("poster") &&
           !e.target.classList.contains("active")
@@ -56,6 +120,7 @@
 
           const activePoster = document.querySelector(".poster.active");
           const clickedPoster = e.target;
+          console.log(activePoster,clickedPoster)
           activePoster.style.height = "70%";
 
           // Calculate the translation distances
@@ -101,27 +166,17 @@
             clickedPoster.classList.add("active");
 
             // Swap the positions in the DOM
-            const parent = document.querySelector(".posters");
-            const activePosterIndex = Array.from(parent.children).indexOf(
-              activePoster
-            );
-            const clickedPosterIndex = Array.from(parent.children).indexOf(
-              clickedPoster
-            );
+            const parent = activePoster.parentNode;
+const activePosterIndex = Array.from(parent.children).indexOf(activePoster);
+const clickedPosterIndex = Array.from(parent.children).indexOf(clickedPoster);
 
-            if (activePosterIndex < clickedPosterIndex) {
-              parent.insertBefore(clickedPoster, activePoster);
-              parent.insertBefore(
-                activePoster,
-                parent.children[clickedPosterIndex]
-              );
-            } else {
-              parent.insertBefore(activePoster, clickedPoster);
-              parent.insertBefore(
-                clickedPoster,
-                parent.children[activePosterIndex]
-              );
-            }
+if (activePosterIndex < clickedPosterIndex) {
+  parent.insertBefore(activePoster, clickedPoster.nextSibling);
+  parent.insertBefore(clickedPoster, activePoster);
+} else {
+  parent.insertBefore(clickedPoster, activePoster.nextSibling);
+  parent.insertBefore(activePoster, clickedPoster);
+}
           }, 0);
         }
       });

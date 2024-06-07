@@ -9,7 +9,7 @@
 
 .posters img {
   height: 70%;
-  object-fit: scale-down;
+  object-fit: contain;
   transition: 0.3s ease;
 
 }
@@ -72,6 +72,16 @@ height: 70%;
   cursor: pointer;
 }
 
+.posters{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.posters.visible{
+  opacity: 1;
+  visibility: visible;
+}
+.poster-btn.active,
 .poster-btn:hover {
   transition: 0.3s ease-in-out;
   border-radius: 20px;
