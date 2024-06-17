@@ -16,3 +16,22 @@ document.addEventListener("DOMContentLoaded",()=>{
     });
 
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+  const cursor = document.createElement('div');
+  cursor.id = 'custom-cursor';
+  document.body.appendChild(cursor);
+
+  const colors = ['red', 'green', 'blue', 'yellow', 'purple', 'orange'];
+  let currentColorIndex = 0;
+
+  document.addEventListener('mousemove', (event) => {
+    const { clientX, clientY } = event;
+    cursor.style.left = `${clientX}px`;
+    cursor.style.top = `${clientY}px`;
+
+    // Change the cursor color based on the position
+    currentColorIndex = (currentColorIndex + 1) % colors.length;
+    cursor.style.backgroundColor = colors[currentColorIndex];
+  });
+});

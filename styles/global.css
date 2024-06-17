@@ -4,7 +4,9 @@ body{
   margin: 0;
   background: black;
   overflow-x: hidden;
+  
 }
+
 button{
   font-family: 'TT Firs Neue Trl', sans-serif;
 cursor: pointer;
