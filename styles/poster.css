@@ -52,8 +52,11 @@ height: 70%;
 .poster__list {
   position: absolute;
   right: -2vw;
-  top: 4vh;
+  top: 50%;
+  transform: translate(0%,-50%);
   height: 85vh;
+  max-width: 35vw;
+
 }
 
 .poster__list img {
@@ -65,16 +68,24 @@ height: 70%;
 .poster__list .poster-btn {
   width: 94%;
   box-sizing: border-box;
-  height: 9.7vh;
+  height: 10%;
   position: absolute;
   left: -0.5vw;
   box-sizing: border-box;
   cursor: pointer;
+  
 }
 
+.poster__inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 .posters{
   opacity: 0;
   visibility: hidden;
+  top: 50%;
+  transform: translate(0%,-50%);
 }
 
 .posters.visible{
@@ -122,4 +133,45 @@ height: 70%;
 
 .poster-btn:nth-child(10) {
   top: 76.1vh;
+}
+
+@media (max-width: 1700px) {
+  .posters :nth-child(3),
+  .posters :nth-child(1) {
+    width: 20vw;
+  }
+  .posters .active{
+    width: 30vw !important;
+    height: unset !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .posters{
+
+    transform: none;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    height: 500px;
+   
+  }
+
+  .posters :nth-child(3),
+  .posters :nth-child(1) {
+    width: 30vw;
+  }
+  .posters .active{
+    width: 40vw !important;
+    height: unset !important;
+  }
+
+  .poster__list{
+    height: fit-content;
+        bottom: 60px;
+        top: unset;
+        right: calc(50% - 20px);
+        transform: translate(50%, 0%);
+       max-width: 50vw;
+  }
 }
