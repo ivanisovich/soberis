@@ -231,7 +231,7 @@ a:hover {
   width: 50%;
 }
 
-.menu-btn{
+.menu-btn {
   display: none;
   position: fixed;
   top: 5px;
@@ -246,12 +246,12 @@ a:hover {
   border-radius: 5px;
 }
 
-.menu-btn img{
+.menu-btn img {
   border-radius: 5px;
   width: 100%;
 }
 
-.text.visible{
+.text.visible {
   opacity: 1;
   visibility: visible;
   transition: 0.3s ease-in-out;
@@ -279,10 +279,6 @@ a:hover {
 
   .menu__item:nth-child(1) img {
     width: 18vw;
-  }
-
-  #cube-container {
-    transform: scale(1.5) !important;
   }
 
   .menu__item:nth-child(2) a {
@@ -322,53 +318,84 @@ a:hover {
   .menu__item:nth-child(4) {
     left: 40.9%;
     bottom: 20.2%;
+  }
+
+  .menu__item:nth-child(3) {
+    left: 8.9%;
+    bottom: 6%;
+    animation-delay: 0.3s;
+  }
+
+  .menu__item {
+    position: static;
+  }
+
+  .menu__item {
+    justify-content: flex-end;
+    align-self: center;
+    width: 100%;
+  }
+
+  .menu__item img {
+    width: 100% !important;
+  }
+
+  .menu {
+    padding: 100px 20px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    max-width: 800px;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: flex-end;
+    align-content: center;
+  }
+
+  .text {
+    width: 100%;
+    background: black;
+    right: 0px;
+    top: 0px;
+    padding-top: 100px;
+    height: 100vh;
+    position: fixed;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .menu__item img{
+    object-fit: cover !important;
+  }
+
+  #cube-container {
+    margin-top: 40vw;
+    height: 23vw;
+    transform: scale(4) !important;
+  }
+
+  .menu__item:nth-child(3) svg {
+    width: 100%;
+    object-fit: scale-down;
+
 }
 
-.menu__item:nth-child(3) {
-  left: 8.9%;
-  bottom: 6%;
-  animation-delay: 0.3s;
+.menu__item .puzzle-item {
+  width: 25% !important;
 }
 
-.menu__item {
-  position: static;
- 
-}
-
-.menu__item{
-  justify-content: flex-end;
-  align-self: center;
-}
-
-.menu{
-  padding: 100px 20px;
-  padding-top: 100px;
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-  max-width: 800px;
-  justify-content: space-between;
-  margin: 0 auto;
-  align-items: flex-end;
-  align-content: center;
-}
-
-#cube-container{
-  margin-right: 4vw;
-}
-
-.text{
+.menu__item:nth-child(4) .puzzle-inner {
   width: 100%;
-  background: black;
-  right: 0px;
-  top: 0px;
-  padding-top: 100px;
-  height: 100vh;
-  position: fixed;
+  padding-bottom: 20px;
+
 }
 
-.menu-btn{
-  display: block ;
+.menu__item:nth-child(5) img {
+  width: 100%;
+  object-fit: cover;
+  padding-bottom: 20px;
 }
 }
-
