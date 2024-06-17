@@ -344,7 +344,7 @@ a:hover {
   padding: 100px 20px;
   padding-top: 100px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 100px;
   max-width: 800px;
   justify-content: space-between;
