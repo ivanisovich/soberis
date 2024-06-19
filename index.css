@@ -241,9 +241,9 @@ a:hover {
   height: 50px;
   background: none;
   border: none;
-  padding: 5px;
+  padding: 10px;
   background: white;
-  border-radius: 5px;
+  border-radius: 100%;
 }
 
 .menu-btn img {
@@ -255,6 +255,10 @@ a:hover {
   opacity: 1;
   visibility: visible;
   transition: 0.3s ease-in-out;
+  padding-left: 1vw;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 1vw;
 }
 
 @media (max-width: 800px) {
@@ -369,6 +373,8 @@ a:hover {
 
   .menu__item img{
     object-fit: cover !important;
+    width: 100%;
+
   }
 
   #cube-container {

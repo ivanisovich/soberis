@@ -7,7 +7,10 @@
   width: 9.846vw;
   cursor: pointer;
 }
-
+body{
+  height: 150vh;
+  position: relative;
+}
 
 .header__navigation:hover{
   opacity: 0.7;
@@ -43,7 +46,7 @@
   color: white;
   position: absolute;
   right: 2.043vw;
-  bottom: 4.5vw;
+  bottom: 10.5vw;
   z-index: 23;
   align-items: center;
 }
@@ -167,4 +170,49 @@
   opacity: 0;
   visibility: hidden;
   transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 1200px) {
+  .form{
+    right: 50%;
+    transform: translate(50%,0%);
+    width: 80%;
+  }
+
+  .form input::placeholder,
+  .form input,
+  .form label{
+    font-size: 15px;
+  }
+
+  .form input{
+    height: 30px
+  }
+  .form p,
+  .form .button{
+    font-size: 14px ;
+  }
+
+  input[type="checkbox"]{
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  body{
+    height: 100vh;
+  }
+
+  .header__navigation{
+    width: 150px;
+  }
+
+  .eyes{
+    top: 9vh;
+  }
+}
+
+@media (max-width: 768px) {
+  body{
+    height:calc(100vw + 150px);
+  }
 }
