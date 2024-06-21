@@ -122,3 +122,37 @@ body{
   height: 100%;
   object-fit: scale-down;
 }
+
+@media (max-width: 1000px) {
+
+  .header__navigation{
+    width: 150px;
+  }
+
+  .product{
+  width: 60vw;
+  height: 60vw;
+  top: 30%;
+  }
+
+  .form{
+  bottom: 100px;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    max-width: 500px;
+    box-sizing: border-box;
+    right: 0px;
+  }
+
+  .form input{
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .form input::placeholder,
+  .form .button,
+  .form label{
+    font-size: 14px;
+  }
+}
