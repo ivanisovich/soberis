@@ -130,10 +130,12 @@
       <img class="section-bg" src="../images/space/atraction.webp" alt="">
     </div>
     <div class="section">
-      <img class="section-bg" src="../images/space/cafe.png" alt="">
+      <div class="cafe">
+        <img class="section-bg" src="../images/space/cafe.png" alt="">
       <a  class="shop-link2" href="../templates/shop.html">
         <img src="../images/space/shop-btn-2.svg" alt="">
       </a>
+      </div>
     </div>
    
     <div class="section">
@@ -170,7 +172,6 @@
     
       
         <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
       </div>
     </div>
   </div>
@@ -204,6 +205,10 @@
   pagination: {
     el: '.swiper-pagination',
   },
+  autoplay: {
+    delay: 3000, // Задержка между слайдами в миллисекундах
+    disableOnInteraction: false, // Не отключать автопрокрутку при взаимодействии пользователя
+  },
 
   // Navigation arrows
   navigation: {
@@ -212,9 +217,7 @@
   },
 
   // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+ 
 });
     
   </script>

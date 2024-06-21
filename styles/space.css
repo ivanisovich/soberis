@@ -108,16 +108,17 @@ transform: rotate(45deg);
 }
 .fair{
   box-sizing: border-box;
-  height: 100vh;
-  position: relative;
 
+  position: relative;
+  height: 100vh;
 }
 .shop-link{
   width: 15.726vw;
   display: flex;
   position: absolute;
-  right: 20%;
+  right: 10%;
   bottom: 1%;
+  
 }
 
 .shop-link:hover{
@@ -153,7 +154,7 @@ transform: rotate(45deg);
   display: flex;
   position: absolute;
   right: 36%;
-  bottom: 13%;
+  bottom: 15%;
 }
 .shop-link2:hover{
   opacity: 0.6;
@@ -189,4 +190,34 @@ transform: rotate(45deg);
 .header{
   position: absolute;
   z-index: 50;
+}
+.cafe{
+  height: 100vh;
+}
+@media (max-width: 1350px) {
+  .fair{
+    height: fit-content;
+  }
+
+}
+
+@media (max-width: 1000px) {
+
+  .header__navigation{
+    width: 200px;
+  }
+
+ 
+}
+
+@media (max-width: 900px) {
+  .cafe{
+    height: fit-content;
+    position: relative;
+  }
+
+  .shop-link2{
+    bottom: 13%;
+    right: 27%;
+  }
 }

@@ -155,4 +155,8 @@ body{
   .form label{
     font-size: 14px;
   }
+
+  .bg{
+    right: 0px
+  }
 }
