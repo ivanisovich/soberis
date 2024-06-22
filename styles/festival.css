@@ -259,6 +259,8 @@ img.photo-card__text{
     flex-direction: column;
     display: flex;
     gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .stats img{
@@ -271,7 +273,7 @@ img.photo-card__text{
   .photo-cards{
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    height: fit-content;
   }
 
   .photo-cards img{
@@ -279,10 +281,35 @@ img.photo-card__text{
   }
 
   .photo-card{
-    width: 40%;
+    width: 90%;
+    margin: 0;
+    left:0 !important;
+    right: 0 !important;
+    position: static;
+  }
+
+  .photo-cards{
+    gap:20px;
+    padding-top: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 200px;
   }
 
   .header__navigation{
     width: 150px;
+  }
+  .photo-cards :nth-child(2),
+  .photo-cards :nth-child(6),
+  .photo-cards :nth-child(4),
+  .photo-cards :nth-child(1){
+    align-self: flex-end;
+  }
+
+  .features span{
+    font-size: 14px;
+  }
+  .features img{
+    width: 40px;
   }
 }
