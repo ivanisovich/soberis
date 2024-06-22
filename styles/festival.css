@@ -296,6 +296,14 @@ img.photo-card__text{
     padding-bottom: 200px;
   }
 
+  .photo-card__text{
+    position: absolute !important;
+    top: 0 !important;
+  }
+  .photo-card{
+    position: relative;
+  }
+
   .header__navigation{
     width: 150px;
   }
