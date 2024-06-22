@@ -174,4 +174,9 @@
   .header__navigation{
     width: 150px;
   }
+  .poster__list,
+  .posters{
+    max-width: 100%;
+    box-sizing: border-box;
+    }
 }
