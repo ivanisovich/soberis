@@ -164,6 +164,7 @@
     max-width: 100%;
     height: fit-content;
     transform: none;
+    margin-bottom: 60px;
   }
 
   .posters.visible {
