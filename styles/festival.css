@@ -237,3 +237,52 @@ img.photo-card__text{
   width: 5.504vw;
 }
 
+
+
+@media  (max-width: 1000px) {
+  .text h1{
+
+  }
+  .text{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 20px;
+  }
+  .text p{
+    font-size: 17px;
+    width: 100%;
+    max-width: 100%;
+    text-align: justify;
+  }
+
+  .stats{
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+  }
+
+  .stats img{
+    position: static;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .photo-cards{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+  }
+
+  .photo-cards img{
+
+  }
+
+  .photo-card{
+    width: 40%;
+  }
+
+  .header__navigation{
+    width: 150px;
+  }
+}

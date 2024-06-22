@@ -65,3 +65,21 @@ margin-bottom: 1vw;
 .guidebook :nth-child(11){
   margin-top: 3vw;
 }
+
+@media  (max-width: 1000px) {
+  .text p{
+    font-size: 15px;
+    text-align: justify;
+    max-width: 100%;
+  }
+  .text{
+    width: 100%;
+    padding: 0px 20px;
+    box-sizing: border-box;
+
+  }
+
+  .header__navigation{
+    width: 200px;
+  }
+}

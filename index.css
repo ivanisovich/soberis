@@ -381,6 +381,7 @@ a:hover {
     margin-top: 40vw;
     height: 23vw;
     transform: scale(4) !important;
+     margin-right: -40px;
   }
 
   .menu__item:nth-child(3) svg {

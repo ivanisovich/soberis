@@ -50,6 +50,7 @@ body{
   bottom: 10.5vh;
   z-index: 23;
   align-items: center;
+
 }
 
 .form input{
@@ -208,12 +209,18 @@ body{
   }
 
   .eyes{
-    top: 9vh;
+    top:100px;
+    position: static;
+    margin-top: 100px;
   }
 }
 
 @media (max-width: 768px) {
-  body{
-    height:calc(100vw + 150px);
+  .form{
+    position: static;
+    transform: none;
+    margin: 0;
+    margin: 0 auto;
+    margin-top: 50px;
   }
-}
+} 
