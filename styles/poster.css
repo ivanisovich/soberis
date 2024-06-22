@@ -152,8 +152,13 @@
     width: 30vw;
   }
   .posters .active {
-    width: 40vw !important;
+    width: 60vw !important;
     height: unset !important;
+  }
+
+  .posters{
+    height: fit-content;
+    margin: 50px 0px;
   }
 
   .poster__list {
@@ -164,7 +169,7 @@
     max-width: 100%;
     height: fit-content;
     transform: none;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   .posters.visible {
