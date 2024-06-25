@@ -1,5 +1,13 @@
 body {
   background: black;
+
+
+}
+
+html{
+  height: 100vh;
+
+  position: relative;
 }
 
 a:hover {
@@ -17,7 +25,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   gap: 1.573vw;
-  cursor: pointer;
+  cursor: url("../images/index/icons8-circle-31.png"),none;
   text-decoration: none;
 }
 
@@ -130,14 +138,15 @@ a:hover {
 .text {
   display: flex;
   flex-direction: column;
-  position: absolute;
+
   right: 1.932%;
-
-  gap: 1.197vw;
-
   position: absolute;
-  top: 8%;
+  gap: 1.197vw;
+  margin-left: auto;
+  margin-top:7vw;
   width: 36.359vw;
+  top: 50%;
+transform: translate(0,-70%);
 }
 .text-item:nth-child(5),
 .text-item:nth-child(2) {
@@ -183,12 +192,12 @@ a:hover {
   flex-grow: 0.5;
   width: 50%;
   align-items: stretch;
-  cursor: pointer;
+  cursor: url("../images/index/icons8-circle-31.png"),none;
 }
 .puzzle-item {
   transition: 0.2s;
   width: 25%;
-  cursor: pointer;
+  cursor: url("../images/index/icons8-circle-31.png"),none;
   transition: transform 0.3s ease-in-out;
   position: relative;
   border: 1px solid white;

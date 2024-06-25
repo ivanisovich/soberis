@@ -4,12 +4,17 @@ body{
   margin: 0;
   background: black;
   overflow-x: hidden;
-  
 }
+html{
+  cursor: url("../images/index/icons8-circle-30.png"),none;
+}
+a{
+  cursor: url("../images/index/icons8-circle-31.png"),none;
 
+}
 button{
   font-family: 'TT Firs Neue Trl', sans-serif;
-cursor: pointer;
+  cursor: url("../images/index/icons8-circle-31.png"),none;
 }
 
 button:hover{
@@ -24,7 +29,7 @@ button:hover{
 
 .header__navigation {
   width: 9.846vw;
-  cursor: pointer;
+  cursor: url("../images/index/icons8-circle-31.png"),none;
 }
 
 

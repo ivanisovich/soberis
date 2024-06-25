@@ -2,7 +2,7 @@
 
 <style>
 .poster-btn{
-  cursor: pointer;
+    cursor: url("../images/index/icons8-circle-31.png"),none;
 }
 
 

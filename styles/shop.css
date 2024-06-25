@@ -5,7 +5,7 @@ body {
 
 .header__navigation {
   width: 9.846vw;
-  cursor: pointer;
+  cursor: url("../images/index/icons8-circle-31.png"),none;
 }
 
 .price-bg {
@@ -24,7 +24,7 @@ body {
 }
 
 .price {
-  cursor: pointer;
+  cursor: url("../images/index/icons8-circle-31.png"),none;
   position: relative;
 }
 .header__navigation:hover,
@@ -139,7 +139,7 @@ body {
 }
 
 .item-btn {
-  cursor: pointer;
+  cursor: url("../images/index/icons8-circle-31.png"),none;
   background: transparent;
 }
 

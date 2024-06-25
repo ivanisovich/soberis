@@ -161,10 +161,20 @@ transform: rotate(45deg);
   transition: 0.3s ease-in-out
   ;
 }
+#fp-nav {
+  padding: 20px !important;
+  cursor: default !important;
+}
 
+.fp-nav{
+  cursor: pointer;
+}
 .fp-tableCell img{
 
   object-fit: scale-down !important;
+}
+.fp-tableCell{
+  position: relative !important;
 }
 .swiper {
   width: 90%;
@@ -174,8 +184,8 @@ transform: rotate(45deg);
   margin-top: 5vh;
 
   position: absolute;
-  bottom: 43%;
-  z-index: 40 !important;
+  bottom: 40%;
+    z-index: 40 !important;
 }
 .swiper-wrapper{
   

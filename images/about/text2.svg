@@ -3,7 +3,11 @@
 a:hover{
   opacity: 0.7;
   transition: 0.3s ease-in-out;
-}  
+} 
+  svg{
+cursor: url("icons8-circle-30.png"),pointer;
+  }
+
 
 </style>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M325.094 607.939H432.184V643.269C425.552 645.543 420.785 651.832 420.785 659.235C420.785 666.637 425.552 672.927 432.184 675.2V711.205H325.094V675.2C331.725 672.926 336.491 666.637 336.491 659.235C336.491 651.833 331.725 645.544 325.094 643.27V607.939Z" fill="white"/>
