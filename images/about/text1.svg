@@ -9,7 +9,7 @@ a:hover{
 
 
   svg{
-cursor: url("icons8-circle-30.png"),pointer;
+cursor: url("icons8-circle-30.png") 15 15,pointer;
   }
 
 

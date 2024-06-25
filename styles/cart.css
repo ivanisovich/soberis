@@ -8,7 +8,7 @@ body{
 
 .header__navigation {
   width: 9.846vw;
-  cursor: url("../images/index/icons8-circle-31.png"),none;
+  cursor: url("../images/index/icons8-circle-31.png") 15 15,none;
 }
 
 .header__navigation:hover{

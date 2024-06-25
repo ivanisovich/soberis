@@ -5,7 +5,7 @@ body {
 
 .header__navigation {
   width: 9.846vw;
-  cursor: url("../images/index/icons8-circle-31.png"),none;
+  cursor: url("../images/index/icons8-circle-31.png") 15 15,none;
 }
 
 .price-bg {
@@ -24,7 +24,7 @@ body {
 }
 
 .price {
-  cursor: url("../images/index/icons8-circle-31.png"),none;
+  cursor: url("../images/index/icons8-circle-31.png") 15 15,none;
   position: relative;
 }
 .header__navigation:hover,
@@ -139,7 +139,7 @@ body {
 }
 
 .item-btn {
-  cursor: url("../images/index/icons8-circle-31.png"),none;
+  cursor: url("../images/index/icons8-circle-31.png") 15 15,none;
   background: transparent;
 }
 

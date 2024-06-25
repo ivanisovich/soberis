@@ -25,7 +25,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   gap: 1.573vw;
-  cursor: url("../images/index/icons8-circle-31.png"),none;
+  cursor: url("../images/index/icons8-circle-31.png") 15 15,none;
   text-decoration: none;
 }
 
@@ -192,12 +192,12 @@ transform: translate(0,-70%);
   flex-grow: 0.5;
   width: 50%;
   align-items: stretch;
-  cursor: url("../images/index/icons8-circle-31.png"),none;
+  cursor: url("../images/index/icons8-circle-31.png") 15 15,none;
 }
 .puzzle-item {
   transition: 0.2s;
   width: 25%;
-  cursor: url("../images/index/icons8-circle-31.png"),none;
+  cursor: url("../images/index/icons8-circle-31.png") 15 15,none;
   transition: transform 0.3s ease-in-out;
   position: relative;
   border: 1px solid white;

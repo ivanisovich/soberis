@@ -21,14 +21,14 @@
 .posters :nth-child(1) {
   margin-right: -12%;
   opacity: 0.5;
-  cursor: url("../images/index/icons8-circle-31.png"),none;
+  cursor: url("../images/index/icons8-circle-31.png") 15 15,none;
   height: 70%;
 }
 
 .posters :nth-child(3) {
   margin-left: -12%;
   opacity: 0.5;
-  cursor: url("../images/index/icons8-circle-31.png"),none;
+  cursor: url("../images/index/icons8-circle-31.png") 15 15,none;
   height: 70%;
 }
 
@@ -65,7 +65,7 @@
   position: absolute;
   left: -0.5vw;
   box-sizing: border-box;
-  cursor: url("../images/index/icons8-circle-31.png"),none;
+  cursor: url("../images/index/icons8-circle-31.png") 15 15,none;
 }
 
 .poster__inner {

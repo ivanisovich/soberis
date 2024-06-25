@@ -2,7 +2,7 @@
 
 <style>
   svg{
-cursor: url("../index/icons8-circle-30.png"),pointer;
+cursor: url("../index/icons8-circle-30.png") 15 15,pointer;
   }
   
 </style>

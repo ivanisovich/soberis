@@ -5,7 +5,7 @@ a:hover{
   transition: 0.3s ease-in-out;
 } 
   svg{
-cursor: url("icons8-circle-30.png"),pointer;
+cursor: url("icons8-circle-30.png") 15 15,pointer;
   }
 
 
